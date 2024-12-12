@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bokor&family=Lobster&family=PT+Sans+Caption:wght@400;700&family=Playwrite+ES+Deco:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&family=Sevillana&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    #main {
+      text-align: center;
+      width: 50%;
+      margin: auto;
+      height: 60vh;
+    }
+    p {
+      font-size: 16px;
+      font-weight: 500;
+      color: white;
+    }
+    body{
+      font-family: "Poppins", serif;
+      background-image: url(https://cdn4.vectorstock.com/i/1000x1000/42/83/sign-up-neon-on-a-brick-background-vector-35024283.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    input {
+      width: 50%;
+      height: 30px;
+      border-radius: 8px;
+    }
+    button {
+      padding: 8px 16px;
+      font-size: 18px;
+      background-color: black;
+      color: white;
+      border-radius: 20px;
+      font-weight: 500;
+        cursor: pointer;
+    }
+  </style>
+  <body>
+    <div id="main">
+      <form>
+        <p>Name</p>
+        <input type="text" id="name" placeholder="your name"  required/>
+        <br />
+        <p>Email</p>
+        <input type="email" id="email" placeholder="Your email" required/>
+        <p>Password</p>
+        <input type="password" id="password" placeholder="Your password" required/>
+      </form>
+      <br />
+      <button onclick="signup()">Sign up</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
